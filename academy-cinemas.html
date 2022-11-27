@@ -91,35 +91,90 @@
     </div>
   </div>
 </div>
+<div class="media">
+  <img src="images\pdx.jpg" class="align-self-center mr-3" alt="...">
+  <div class="media-body">
+    <h5 class="mt-0">About</h5>
+    <p>Welcome to the Academy Cinemas! Here you're family. Located in beautiful downtown portland, we show a variety of movies.
+       We were founded in 1955 by Sir. Francis McMan. Sir. McMan wanted a place to show his independent movie collection in Portland. 
+       His buisness grew fast and unexpectedly. Francis was suddenly running one of the largest movie theatres in Portland.
+      McMan hired more and more empolyees to deal with the growing demand, and ended up adding 3 more auditoriums to the theatre in 1960.
+      McMan passed away in 1990 at the age of 85 from a heart attack in the projection room and left the Academy to his son. 
+      Today the Academey still keeps special showing times reserved for Sir. McMan's orginal movie collection. It's  even said that people sometimes
+      hear a man laughing at Sir. McMan's favorite comedy "Darling Of Mine" when the auditorium is empty. </p>
+  </div>
+</div>
+<!--jumbotron heading-->
+<div class="Jumbotron jumbotron-fluid bginfo mt-5 text-center">
+  <div class="container">
+    <h1 class="display-4 hidden-sm-down" style="color: #fff;font-family:roboto;font-weight:900;text-transform:uppercase;">
+   Movie Deals </h1>
+   <p class="lead">Check out our monthly deals...</p>
+   <!---movie deals-->
+   <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#register">See our monthly movie deals</button>
+   <!--/movie deals-->
+  </div>
+</div>
+<!--/Jumbotron heading-->
 
-      <div class="container">
-        <div class="row">
-          <div class="col-sm">
-            <img class="img fluid" src=".\images\pdx.jpg" width="500" height="300">
+             <div class="row">
+                    <div class="container text-center col-ad-6" id="deals">
+                      <h1 class="display-5 my-4 col-lg-auto text-primary">Stay current on movie deals</h1>
+                      <div class="input-group ab-5 input-group-sm">
+                        <input type="text" class="form-control" placeholder="Email">
+                        <span class="input-group-btn"></span>
+                        <button type="button" class="btn btn-secondary btn-info popover-dismiss" data-container="body" data-toggle="popover" data-placement="top" data-content="Submit your email to recieve movie rewards">
+                          Sign up!</button>
+              </span>
+            </div>
           </div>
+         </div>
+         <!--Model sign-->
 
-          <div class="col-sm">
-          <h3 id="About">Accomidations:</h3>
-            <p>Located in beautiful downtown Portland,</p>
-            <p>Our guests review us as a five star attraction</p>
-            <p>we pride ourselves on our preservation of the cinema</p>
-            <p>We serve snacks and drinks right to your seat</p>
+        <!-- Modal -->
+        <div class="modal fade" id="register" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">See our movie deals</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="firstname">First name</label>
+                    <input type="email" class="form-control" id="firstname">
+                  </div>
+                  <div class="form-group">
+                    <label for="lastname">Last name</label>
+                    <input type="password" class="form-control" id="lastname">
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="password" class="form-control" id="email">
+                  </div>
+                  <div class="form-group">
+                    <label for="password">password</label>
+                    <input type="password" class="form-control" id="password">
+                  </div>
+                
+                </form>
 
 
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
           </div>
         </div>
-
-             <div class="text-center">
-                <form>
-                    <h1 class="text-primary my-5" id="deals">Sign up for movie club rewards</h1>
-                    <div class="form-group">
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                <div>
-                    <button type="submit" class="btn btn-primary my-2">Submit</button>
-                </form>
-            </div>
-           <div class="container my-3">
-            <ul class="nav text-center">
+        
+            <div class="container my-3">
+      <ul class="nav text-center">
                 <li class="nav-item">
                   <small><a class="nav-link active" href="#">movie rewards</a></small>
                 </li>
@@ -143,5 +198,12 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  
+  <script> 
+  $('.popover-dismiss').popover({
+  trigger: 'focus'
+})
+  </script>
+  
   </body>
 </html>
